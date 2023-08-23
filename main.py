@@ -5,14 +5,19 @@ def main():
     Use m_perc and f_perc for your results
     ##################################################
     """
+    
+    #asks for input of genders in class
     male = int(input ('male head count'))
     female= int(input('female head count'))
 
+    #finds the class total through adding the genders input
     total= male + female
 
-    m_perc= 0
-    f_perc= 0
+    #calc the % of each gender reported
+    m_perc= (male / total) * 100
+    f_perc= (female / total) * 100
 
+    #displays all values under the desired format and out puts them
     print(total)
     print({male}, {female})
     print({m_perc}, {f_perc})
